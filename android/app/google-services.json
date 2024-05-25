@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "303696237008",
+    "project_id": "shopapp-2eee8",
+    "storage_bucket": "shopapp-2eee8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303696237008:android:a8088d9123c6c12dd429d5",
+        "android_client_info": {
+          "package_name": "com.example.tilomathshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbErCw60_rhMrof6JTWsNSlULm2N4rv2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

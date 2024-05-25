@@ -15,8 +15,8 @@ class _SignUpState extends State<SignUp> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          margin:
-              EdgeInsets.only(top: 70.0, left: 20.0, right: 20.0, bottom: 40.0),
+          margin: const EdgeInsets.only(
+              top: 70.0, left: 20.0, right: 20.0, bottom: 40.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -27,7 +27,7 @@ class _SignUpState extends State<SignUp> {
                   "images/logo-no-background.png",
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Center(
@@ -36,81 +36,81 @@ class _SignUpState extends State<SignUp> {
                   style: AppWidget.semiboldTextFieldStyle(),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Text(
                 "Please Enter Your Details Below to Continue",
                 style: AppWidget.lightTextFieldStyle(),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40.0,
               ),
               Text(
                 "Name",
                 style: AppWidget.semiboldTextFieldStyle(),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Container(
-                  padding: EdgeInsets.only(left: 20.0),
+                  padding: const EdgeInsets.only(left: 20.0),
                   decoration: BoxDecoration(
-                      color: Color(0xFFF4F5F9),
+                      color: const Color(0xFFF4F5F9),
                       borderRadius: BorderRadius.circular(10)),
-                  child: TextField(
+                  child: const TextField(
                     decoration: InputDecoration(
                         border: InputBorder.none, hintText: "name"),
                   )),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Text(
                 "Email",
                 style: AppWidget.semiboldTextFieldStyle(),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Container(
-                  padding: EdgeInsets.only(left: 20.0),
+                  padding: const EdgeInsets.only(left: 20.0),
                   decoration: BoxDecoration(
-                      color: Color(0xFFF4F5F9),
+                      color: const Color(0xFFF4F5F9),
                       borderRadius: BorderRadius.circular(10)),
-                  child: TextField(
+                  child: const TextField(
                     decoration: InputDecoration(
                         border: InputBorder.none, hintText: "email"),
                   )),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Text(
                 "Password",
                 style: AppWidget.semiboldTextFieldStyle(),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Container(
-                  padding: EdgeInsets.only(left: 20.0),
+                  padding: const EdgeInsets.only(left: 20.0),
                   decoration: BoxDecoration(
-                      color: Color(0xFFF4F5F9),
+                      color: const Color(0xFFF4F5F9),
                       borderRadius: BorderRadius.circular(10)),
-                  child: TextField(
+                  child: const TextField(
                     decoration: InputDecoration(
                         border: InputBorder.none, hintText: "password"),
                   )),
-              SizedBox(
+              const SizedBox(
                 height: 18,
               ),
               Center(
                 child: Container(
                   width: MediaQuery.of(context).size.width / 2,
-                  padding: EdgeInsets.all(18),
+                  padding: const EdgeInsets.all(18),
                   decoration: BoxDecoration(
-                      color: Color(0xFFfd6f3e),
+                      color: const Color(0xFFfd6f3e),
                       borderRadius: BorderRadius.circular(18)),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "SIGN UP",
                       style: TextStyle(
@@ -121,7 +121,7 @@ class _SignUpState extends State<SignUp> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Row(
@@ -133,10 +133,12 @@ class _SignUpState extends State<SignUp> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Login()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Login()));
                     },
-                    child: Text(
+                    child: const Text(
                       "Sign In",
                       style: TextStyle(
                           color: Color(0xFFfd6f3e),
